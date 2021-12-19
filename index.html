@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container text-muted" style="width: 500px;">
+			<form>
+				<h1 class="text-body">Мы свяжемся с вами</h1>
+			  	<div class="row mt-3">
+			    	<div class="col">
+			    		<label for="nick">Обращение</label>
+			      		<select class="form-control rounded-0 text-muted" aria-label="Default select example" id="nick">
+						  <option selected>Мистер</option>
+						  <option value="1">One</option>
+						  <option value="2">Two</option>
+						  <option value="3">Three</option>
+						</select>
+			    	</div>
+
+			    	<div class="col">
+			    		<label for="name">Имя</label>
+			      		<input type="text" class="form-control rounded-0" id="name" placeholder="Джон" name="name">
+			    	</div>
+
+			    	<div class="col">
+			    		<label for="surname">Фамилия</label>
+			      		<input type="text" class="form-control rounded-0" id="surname" placeholder="Смит" name="surname">
+			    	</div>
+			  	</div>
+
+			  	<div class="row mt-3">
+					<div class="col">
+						<label for="email">E-mail</label>
+					  	<input type="email" class="form-control rounded-0" id="email" placeholder="johnsmith@gmail.com" name="email">
+					</div>
+			 	 </div>
+
+				<div class="row mt-3">
+					<div class="col">
+						<label for="phone">Телефон</label>
+						<input type="tel" class="form-control rounded-0" id="phone" placeholder="+7 999 999-99-99" name="phone">
+					</div>
+			 	</div>
+
+				<div class="row mt-3">
+					<div class="col-1">
+						<input style="width:20px;" type="checkbox" class="form-control rounded-0" id="agree" name="agree">
+					</div>
+					<div class="col-5">
+						<label for="agree">Согласие на обработку персональных данных</label>
+					</div>
+					<div class="col-1">
+						<input style="width:20px;" type="checkbox" class="form-control rounded-0" id="sub" name="sub" checked>
+					</div>
+					<div class="col-5">
+						<label for="sub">Подписка на рассылку</label>
+					</div>
+			 	</div>
+
+				<div class="row mt-3">
+					<div class="col-3">
+						<button style="width:150px" type="submit" class="btn btn-primary bg-info border-0 rounded-0">Отправить</button>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+		
+
+		<div class="container mt-5">
+			<form>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2 class="text-warning">Остались вопросы?</h2>
+						</div>
+						<div class="col">
+							<p>Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-9">
+							<div class="row mt-3">
+								<div class="col">
+									<label for="name">ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА:</label>
+									<input type="text" class="form-control rounded-0" id="name" name="name">
+								</div>
+							</div>
+		
+							<div class="row mt-3">
+								<div class="col">
+									<label for="phone">КОНТАКТНЫЙ ТЕЛЕФОН:</label>
+									<input type="tel" class="form-control rounded-0" id="phone" name="phone">
+								</div>
+								<div class="col">
+									<label for="email">ЭЛЕКТРОННАЯ ПОЧТА:</label>
+									<input type="email" class="form-control rounded-0" id="email" name="email">
+								</div>
+							</div>
+		
+							<div class="row mt-3 pb-5 border-bottom">
+								<div class="col-1">
+									<input type="checkbox" class="form-control rounded-0" id="sub" name="sub" checked>
+								</div>
+								<div class="col-11">
+									<label for="sub">Я согласен получать спам и смс на телефон</label>
+								</div>
+							</div>
+							
+							<div class="row mt-5">
+								<div class="col">
+									<label for="theme">ТЕМА ОБРАЩЕНИЯ?</label>
+									<select class="form-control rounded-0" aria-label="Default select example" id="theme">
+									<option selected>Условия доставки</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+									</select>
+								</div>
+							</div>
+		
+							<div class="row mt-3">
+								<div class="col">
+									<label for="comment">ТЕКСТ ОБРАЩЕНИЯ:</label>
+									<textarea class="form-control rounded-0" rows="5" id="comment"></textarea>
+								</div>
+							</div>
+		
+							<div class="row mt-3">
+								<div class="col-3">
+									<button style="width:150px; height: 40px;" type="submit" class="btn btn-primary bg-warning border-0 rounded-0">ОТПРАВИТЬ</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-3">
+							<img src="kot.jpg" class="rounded mt-5" width="330">
+						</div>
+					</div>
+					
+				</div>
+
+			</form>
+		</div>
+
+
+
+
+		<div class="container mt-5">
+			<form>
+				<h2 class="text-body">2. Заполните поля:</h2>
+				<p class="pb-3 border-bottom">Пароль будет создан автоматически и отправлен на эл. почту</p>
+			  	
+				<div class="row mt-4">
+					<div class="col-2">
+			    		<label for="organization">Организация*</label>
+			    	</div>
+					<div class="col">
+			      		<select class="form-control text-muted" aria-label="Default select example" id="organization" required>
+						  <option selected>Начните вводить название организации и выберите из списка</option>
+						  <option value="1">One</option>
+						  <option value="2">Two</option>
+						  <option value="3">Three</option>
+						</select>
+						<p class="m-0">Например, СГКПиСО или Слободской государственный колледж педагогики в социальных отношений (г. Слободской)</p>
+						<p class="m-0">Не нашли свою организацию?<a href="#">Добавить организацию</a></p>
+					</div>
+			  	</div>
+
+			  	<div class="row mt-5">
+					<div class="col-2">
+						<label for="email">Эл. почта*</label>
+					</div>
+					<div class="col">
+						<input type="email" class="form-control" id="email" placeholder="Введите адрес эл. почты" name="email" required>
+					</div>
+					<div class="col">
+						<p>Указанный E-mail будет использоваться в качестве логина для входа в учетную запись</p>
+					</div>
+			 	</div>
+
+				<div class="row mt-5">
+					<div class="col-2">
+			    		<label for="surname">Фамилия*</label>
+			    	</div>
+					<div class="col">
+						<input type="text" class="form-control" id="surname" placeholder="Введите фамилию" name="surname" required>
+					</div>
+					<div class="col">
+						<input type="text" class="form-control" id="surname2" placeholder="Введите вторую фамилию" name="surname2">
+					</div>
+			 	</div>
+
+				<div class="row mt-5">
+					<div class="col-2">
+			    		<label for="name">Имя*</label>
+			    	</div>
+					<div class="col">
+			      		<input type="text" class="form-control" id="name" placeholder="Введите имя" name="name" required>
+			    	</div>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col-2">
+			    		<label for="patronymic">Отчество</label>
+			    	</div>
+					<div class="col">
+			      		<input type="text" class="form-control" id="patronymic" placeholder="Введите отчество" name="patronymic">
+			    	</div>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col-2">
+			    		<label for="sex">Пол*</label>
+			    	</div>
+					<div class="col">
+						<label class="form-check-label mr-5 ml-3">
+							<input type="radio" class="form-check-input" name="man">Мужской
+						</label>
+						<label class="form-check-label">
+							<input type="radio" class="form-check-input" name="fem">Женский
+						</label>
+			    	</div>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col-2">
+			    		<label for="phone">Номер телефона*</label>
+			    	</div>
+					<div class="col-3">
+						<select class="form-control text-muted" aria-label="Default select example" id="mine">
+							<option selected>Личный</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						  </select>
+					</div>
+					<div class="col">
+						<input type="tel" class="form-control" id="phone" placeholder="+7(___)___-____" name="phone" required>
+					</div>
+			 	</div>
+
+				<div class="row mt-5">
+					<div class="col-1">
+						<input style="width:20px;" type="checkbox" class="form-control rounded-0" id="agree" name="agree" checked>
+					</div>
+					<div class="col">
+						<label for="agree">Я соглашаюсь на <a href="#" class="text-body">публикацию цифровой активности</a></label>
+					</div>
+			 	</div>
+				
+				<div class="row mt-3">
+					<div class="col-1">
+						<input style="width:20px;" type="checkbox" class="form-control rounded-0" id="news" name="news" checked>
+					</div>
+					<div class="col">
+						<label for="news">Я хочу получать новости и полезные материалы</label>
+					</div>
+			 	</div>
+
+				<div class="row mt-3">
+					<div class="col-3">
+						<button style="width:150px" type="submit" class="btn btn-primary bg-warning border-0">Отправить</button>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+
+	</body>
+</html>
